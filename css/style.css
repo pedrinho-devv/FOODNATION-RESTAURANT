@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    padding-top: 90px;
+    height: 1000px;
+}
+
+.row {
+    margin: 0;
+}
+
+.container {
+    padding: 0;
+}
+
+/* Cores de texto */
+p, li {
+    color: #002;
+}
+
+/* Navbar */
+.header .navbar {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.header {
+    position: fixed;  
+    top: 0;           
+    left: 0;          
+    width: 100%;      
+    z-index: 1000;    
+    background-color: white; 
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; 
+}
+
+#navbar-container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#logo {
+    width: 70px;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar {
+    padding: 10px 50px;
+}
+
+.navbar-nav a {
+    text-decoration: none;
+    color: #B22222;
+    position: relative;
+}
+
+.navbar-nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #B22222; 
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease; 
+}
+
+.navbar-nav a:hover::after {
+    width: 100%; 
+}
+
+/* Slide */
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+#mainSlider {
+    margin-top: -10px;
+}
+
+#mainSlider .carousel-inner, #mainSlider .carousel-item {
+    height: 70vh;
+}
+
+#mainSlider .carousel-caption {
+    top: 30%;
+}
+
+.carousel-item h2 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-caption {
+    position: absolute; 
+    top: 30%;
+    left: 0;
+    right: 0;
+}
+
+.carousel-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);   
+}
+
+.carousel-item p {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 100px;
+}
+
+.bnt {
+    font-size: 19px;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #B22222;
+    border-radius: 8px;
+}
